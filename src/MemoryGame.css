@@ -1,0 +1,48 @@
+.memory-game {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tile-container {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tile-container:hover {
+    transform: translateY(-3px);
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.tile-matched {
+    background-color: #f0f0f0;
+    pointer-events: none;
+}
+
+.tile-hidden {
+    background-color: #ddd;
+    pointer-events: none;
+}
