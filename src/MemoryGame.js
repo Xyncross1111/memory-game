@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import './MemoryGame.css';
 
@@ -23,6 +24,7 @@ const MemoryGame = () => {
 
     const setInitialTiles = () => {
         const initialTiles = images.concat(images).sort(() => Math.random() - 0.5);
+
         setTiles(initialTiles);
     }
 
